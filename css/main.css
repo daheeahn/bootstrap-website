@@ -1,7 +1,55 @@
+/* GENERAL RULES */
+
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
   list-style: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #FAFAFA;
+}
+
+/* FOOTER */
+
+h3 {
+  color: #252B42;
+  font-weight: bold;
+}
+
+p {
+  color: #252B42;
+}
+
+.col-subtitle {
+  font-weight: bold;
+  margin-bottom: 10%;
+}
+
+.row {
+  text-align: left;
+}
+
+#footer {
+  background-color: #252B42;
+}
+
+.col {
+  color: white;
+}
+
+.col-8 {
+  color: #737373;
+}
+
+.btn-custom {
+  background-color: #23A6F0 !important;
+  /* Colore blu chiaro */
+  color: white;
+  /* Colore del testo */
+  border: none;
+  /* Rimuove il bordo predefinito */
 }

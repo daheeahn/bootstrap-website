@@ -1,4 +1,7 @@
 /* Mobile */
 
-@media (max-width: 700px) {
+@media (max-width: 700px) {}
+
+#desktop-footer-design {
+    display: flex;
 }
