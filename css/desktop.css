@@ -2,29 +2,8 @@
 
 @media (min-width: 700px) {
 
-    /* FOOTER */
-
-    /* FOOTER */
-
-    /* footer part 1 */
-    .custom-margin1 {
-        margin-left: 90px;
-        /* Sostituisci con il valore desiderato */
-        margin-right: 90px;
-        /* Sostituisci con il valore desiderato */
+    .mobilet {
+        display: none;
     }
 
-    /* footer part 2 
-    .custom-margin2 {
-        margin-left: 10px; 
-    } */
-
-
-    /* footer part 3 */
-    .custom-margin3 {
-        margin-left: 90px;
-        /* Sostituisci con il valore desiderato */
-        margin-right: 90px;
-        /* Sostituisci con il valore desiderato */
-    }
 }
