@@ -1,4 +1,4 @@
-/* GENERAL RULES */
+/* GENERAL color and font RULES */
 
 * {
   box-sizing: border-box;
@@ -13,43 +13,58 @@ body {
   background-color: #FAFAFA;
 }
 
-/* FOOTER */
+/* PARTICULAR color RULES */
 
-h3 {
-  color: #252B42;
-  font-weight: bold;
-}
-
-p {
-  color: #252B42;
-}
-
-.col-subtitle {
-  font-weight: bold;
-  margin-bottom: 10%;
-}
-
-.row {
-  text-align: left;
-}
-
-#footer {
+.custom-footer-bg {
   background-color: #252B42;
 }
 
-.col {
-  color: white;
-}
-
-.col-8 {
+.custom-text-color {
   color: #737373;
 }
 
-.btn-custom {
-  background-color: #23A6F0 !important;
-  /* Colore blu chiaro */
-  color: white;
-  /* Colore del testo */
-  border: none;
-  /* Rimuove il bordo predefinito */
+.custom-text-color2 {
+  color: #23A6F0;
+}
+
+.btn-primary {
+  background-color: #23A6F0;
+  border-color: #23A6F0;
+}
+
+/* NECESSARY CSS FOR TRICKY IMAGES */
+
+.img-container {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
+}
+
+.img-overlay {
+  position: absolute;
+  top: 55%;
+  left: 0;
+  right: 15%;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 0 15px;
+}
+
+.img-custom {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+#image-new {
+  position: relative;
+}
+
+#image-new img {
+  position: absolute;
+  top: -40px;
+  right: 10px;
 }

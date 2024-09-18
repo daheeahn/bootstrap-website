@@ -1,43 +1,30 @@
 /* Desktop */
 
-@media (min-width: 700px) {}
+@media (min-width: 700px) {
 
-#mobile-footer-design {
-    display: none;
-}
+    /* FOOTER */
 
-.row {
-    line-height: 210%;
-    padding: 3% 0;
-    box-sizing: border-box;
-}
+    /* FOOTER */
 
-.col img {
-    margin-right: 2px;
-}
+    /* footer part 1 */
+    .custom-margin1 {
+        margin-left: 90px;
+        /* Sostituisci con il valore desiderato */
+        margin-right: 90px;
+        /* Sostituisci con il valore desiderato */
+    }
 
-#desktop-footer-design {
-    display: flex;
-    padding: 0 0;
-}
+    /* footer part 2 
+    .custom-margin2 {
+        margin-left: 10px; 
+    } */
 
-#desktop-footer-design li {
-    margin: 0 5px;
-}
 
-.footer2 {
-    padding: 0 10%;
-    /* Aggiunge 20px di spazio a sinistra e a destra del contenitore */
-    box-sizing: border-box;
-}
-
-.d-grid {
-    position: relative;
-}
-
-.btn-primary {
-    position: relative;
-    top: -70px;
-    width: 180px;
-    height: 45px;
+    /* footer part 3 */
+    .custom-margin3 {
+        margin-left: 90px;
+        /* Sostituisci con il valore desiderato */
+        margin-right: 90px;
+        /* Sostituisci con il valore desiderato */
+    }
 }
