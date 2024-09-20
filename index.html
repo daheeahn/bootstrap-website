@@ -604,6 +604,74 @@
       </div>
     </main>
 
+    <section
+      class="container-fluid bg-white row m-0"
+      style="
+        background-image: url('./assets/form-background.jpg');
+        background-size: cover;
+        background-position: top right;
+        background-repeat: no-repeat;
+      "
+    >
+      <div
+        class="d-flex flex-column p-5 col-12 col-md-8 justify-content-center align-items-center"
+      >
+        <div class="container fw-semibold">Contact Us</div>
+        <h1 class="container fw-bold mb-4">Make an Appointment</h1>
+
+        <div class="container-fluid row">
+          <div class="mb-3 col-12 col-md-6">
+            <input
+              type="text"
+              class="form-control"
+              placeholder="Full Name"
+              required
+            />
+          </div>
+
+          <div class="mb-3 col-12 col-md-6">
+            <input
+              type="email"
+              class="form-control"
+              placeholder="example@gmail.com"
+              required
+            />
+          </div>
+
+          <div class="mb-3 col-12 col-md-6">
+            <select class="form-select" required>
+              <option selected>Please Select</option>
+              <option value="1">Option 1</option>
+              <option value="2">Option 2</option>
+            </select>
+          </div>
+
+          <div class="mb-3 col-12 col-md-6">
+            <select class="form-select" required>
+              <option selected>4:00 Available</option>
+              <option value="1">4:00 PM</option>
+              <option value="2">5:00 PM</option>
+            </select>
+          </div>
+
+          <div class="mb-3 col-12">
+            <textarea
+              class="form-control"
+              rows="3"
+              placeholder="Message"
+            ></textarea>
+          </div>
+
+          <button
+            type="submit"
+            class="btn btn-primary btn-block col-12 col-md-4 m-2"
+          >
+            Book Appointment
+          </button>
+        </div>
+      </div>
+    </section>
+
     <!-- Footer -->
     <section
       class="d-flex flex-column flex-md-row align-items-center px-md-5 pt-5 ms-4 ms-md-0"
