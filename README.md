@@ -12,7 +12,7 @@ This design is from https://www.figma.com/community/file/946390947835621236 by [
 
 ### Contributor
 
-What [@daheeahn/Dahee Ahn](https://github.com/daheeahn) and []() worked on:
-<img src="./assets/work-part.jpg" alt="Project Preview" width="500" height="1500">
+What [@daheeahn/Dahee Ahn](https://github.com/daheeahn) and [@aurorar17/Aurora](https://github.com/aurorar17) worked on:
+<img src="./assets/work-part.png" alt="Project Preview" width="500" height="1800">
 
 - (This is the original screenshot from Figma)
