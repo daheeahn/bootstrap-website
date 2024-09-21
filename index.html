@@ -9,10 +9,6 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
-    />
 
     <title>Bootstrap Website</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,6 +17,14 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
     <link rel="stylesheet" href="./css/main.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
     <link rel="stylesheet" href="./css/mobile.css" />
@@ -28,69 +32,151 @@
 
   <body>
     <header>
-      <!--nav-->
-      <nav
-        class="navbar navbar-expand-sm navbar-dark bg-dark"
-        aria-label="navbar example"
-      >
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">BrandName</a>
-
-          <div class="row d-lg-none">
-            <div class="col text-white">검색</div>
-            <div class="col text-white">카트</div>
-            <div class="col text-white">메뉴</div>
-          </div>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#nav-menu"
-            aria-controls="nav-menu"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="collapse navbar-collapse" id="nav-menu">
-            <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Product</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-
-          <!-- 
-          <ul class="navbar-nav me-auto mb-2 mb-sm-0">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Login</a>
-            </li>
-            <button
-              class="btn btn-primary d-inline-flex align-items-center"
-              type="button"
-            >
-              Become a member
-              <svg class="bi ms-1" width="20" height="20">
-                <use xlink:href="#arrow-right-short"></use>
-              </svg>
-            </button>
-          </ul> -->
-        </div>
-      </nav>
-
       <!-- We Ensure ~ -->
-      <div class="container-fluid col bg-black">
-        <div class="col-12 col-sm-8 col-lg-6 py-5 px-5">
+      <div
+        class="container-fluid col"
+        style="
+          background-image: url('./assets/header-background.png');
+          background-size: cover;
+          background-position: top left;
+          background-repeat: no-repeat;
+        "
+      >
+        <!-- nav for smaller than sm -->
+        <div>
+          <nav class="d-sm-none">
+            <div class="row p-3" style="background-color: #252b42">
+              <a class="col-6 navbar-brand text-white fs-5 fw-medium" href="#"
+                >BrandName</a
+              >
+              <div class="col-3"></div>
+              <div class="col-1">
+                <a href="#">
+                  <img
+                    src="./assets/icons/icon-search.png"
+                    class="object-fit-contain"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="col-1">
+                <a href="#">
+                  <img
+                    src="./assets/icons/icon-cart.png"
+                    class="object-fit-contain"
+                    width="20"
+                    height="20"
+                /></a>
+              </div>
+              <div class="col-1">
+                <a href="#">
+                  <img
+                    src="./assets/icons/icon-menu.png"
+                    class="object-fit-contain"
+                    width="20"
+                    height="20"
+                  />
+                </a>
+              </div>
+            </div>
+
+            <div class="row pt-3 pb-5" style="background-color: #252b42">
+              <div class="col-12 d-flex justify-content-center">
+                <a
+                  class="fs-4 text-white fw-medium text-decoration-none py-2"
+                  href="#"
+                  >Home</a
+                >
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <a
+                  class="fs-4 text-white fw-medium text-decoration-none py-2"
+                  href="#"
+                  >Product</a
+                >
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <a
+                  class="fs-4 text-white fw-medium text-decoration-none py-2"
+                  href="#"
+                  >Pricing</a
+                >
+              </div>
+              <div class="col-12 d-flex justify-content-center">
+                <a
+                  class="fs-4 text-white fw-medium text-decoration-none py-2"
+                  href="#"
+                  >Contact</a
+                >
+              </div>
+            </div>
+          </nav>
+
+          <!-- nav for sm and larger -->
+          <nav class="d-none d-sm-flex">
+            <div
+              class="navbar navbar-expand-sm navbar-dark container-fluid d-flex flex-row justify-content-between mx-5 my-3"
+              aria-label="Fourth navbar example"
+            >
+              <div class="container-fluid">
+                <a class="navbar-brand" href="#">BrandName</a>
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#navbarsExample04"
+                  aria-controls="navbarsExample04"
+                  aria-expanded="false"
+                  aria-label="Toggle navigation"
+                >
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExample04">
+                  <ul class="navbar-nav me-auto mb-2 mb-md-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Home</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Product</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Pricing</a
+                      >
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#"
+                        >Contact</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div
+                class="container-fluid d-flex flex-row justify-content-end align-items-center"
+              >
+                <ul class="navbar-nav me-4 mb-2 mb-md-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#"
+                      >Login</a
+                    >
+                  </li>
+                </ul>
+                <button class="btn btn-primary" type="button">
+                  Become a member
+                  <i class="fas fa-arrow-right ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        <div class="col-12 col-sm-8 col-lg-6 p-5">
           <h1
             class="display-4 fw-bold text-white mb-4 text-center text-sm-start"
           >
@@ -104,7 +190,7 @@
 
           <!-- 기본 모바일 -->
           <div
-            class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start gap-3"
+            class="d-flex flex-column flex-sm-row justify-content-center justify-content-sm-start align-items-center align-items-sm-start gap-3 mb-4"
           >
             <button
               type="button"
